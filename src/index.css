@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gray: #5A5959;
+}
+
+/* .container,
+.hero_container {
+  width: 100%;
+  max-width: 1225px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.login-btn {
+  text-transform: uppercase;
+  cursor: pointer;
+} */
+
+/* manage Btn */
+
+.mng-btn {
+  display: flex;
+  gap: 40px;
+  line-height: 102px;
+}
+
+.mng-btn button,
+.login-btn {
+  border: 1px solid var(--gray);
+  padding: 6px 16px;
+  font-size: 24px;
+}
+
+.shop-btn,
+.login-btn {
+  border: none !important;
+  background: #D01C28;
+}
+
+.shop-btnn {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero Section */
+
+.hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hero_details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 600px;
+}
+
+.hero_details h1 {
+  font-size: 100px;
+  line-height: 85px;
+  text-transform: uppercase;
+}
+
+.hero_details p {
+  width: 100%;
+  max-width: 404px;
+  font-size: 16px;
+}
+
+.mng-btn {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mng-btn button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background: #D01C28;
+  color: white;
+  cursor: pointer;
+}
+
+.shop-btnn {
+  text-decoration: none;
+  color: white;
+}
+
+.shoping_sec p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.shoping_mng {
+  display: flex;
+  gap: 16px;
+}
+
+.hero_img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* ----------------------------
+   Responsive Media Queries
+----------------------------- */
+
+@media (max-width: 1024px) {
+  .hero_section {
+    flex-direction: column-reverse;
+    /* 👈 this makes image appear first */
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .hero_details h1 {
+    font-size: 64px;
+    line-height: 1.1;
+  }
+
+  .hero_details p {
+    margin: 0 auto;
+
+  }
+
+  .mng-btn {
+    justify-content: center;
+  }
+
+  .hero_img img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_section {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero_details h1 {
+    font-size: 48px;
+  }
+
+  .mng-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .mng-btn button {
+    width: 30%;
+    font-size: 16px;
+  }
+
+  .shoping_mng {
+    justify-content: center;
+  }
+}
+
+/* **************** */
+
+.container,
+.hero_container {
+  width: 100%;
+  max-width: 1225px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+  position: relative;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Normal nav styles */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.login-btn {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.shop-btnn {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  nav {
+    margin:  0 30px;
+}
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: -16px;
+    background: white;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-links ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .login-btn {
+    margin-top: 10px;
+  }
+}

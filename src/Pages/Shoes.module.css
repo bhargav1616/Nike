@@ -1,0 +1,130 @@
+.TopTitle{
+ padding: 10px 0 0 50px;
+}
+
+.Main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 50px 50px;
+}
+
+/* .ShoesNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+} */
+
+.StandNavbar{
+    min-width: 20% !important;
+}
+
+/* input {
+    padding: 10px 10%;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+
+.searchPng {
+    position:fixed;
+    left: 31%;
+    cursor: pointer;
+}
+
+.ShoesIcon {
+    cursor: pointer;
+} */
+
+.ShoesNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  flex-wrap: wrap; /* mobile-friendly */
+  margin: 0 30px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  width: 80%;
+  padding: 10px 40px 10px 50px; /* add padding-left for the icon */
+  border: 1px solid gray;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.searchPng {
+  position: absolute;
+  /* left: 9%; */
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.ShoesIcon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  /* text-align: center; */
+}
+
+
+/* Scroll Navbar */
+
+.ScrollNavbar p {
+    line-height: 30px;
+}
+
+.ShoesImage {
+    width: 318px !important;
+}
+
+.ScrollNavbar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Shoes Part*/
+
+.Content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* padding-left: 40px; */
+    justify-content: space-between;
+}
+
+.ShoesDetails p {
+    color: #D43B1B;
+}
+
+.MensShoes {
+    color: #b8b8b8 !important;
+}
+
+/* Responsive Style */
+
+@media (max-width:768px) {
+    .Content{
+        margin: 0 auto;
+        min-width: 30% !important;
+    }
+    .ShoesImage{
+        width: 250px !important;
+    }
+    .StandNavbar{
+    min-width: 25% !important;
+}
+}
+

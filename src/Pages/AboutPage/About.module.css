@@ -1,0 +1,142 @@
+.AllAbout {
+  background-color: black;
+  padding: 20px;
+}
+
+/* Main Section */
+
+.main {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.main h1 {
+  font-size: 10rem;
+  line-height: 9rem;
+  margin: 0;
+}
+
+.main p {
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+/* Woman Walking Section */
+
+.womanWackingSection {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.womanWacking {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+}
+
+/* Third Section */
+
+.ThirdSection {
+  color: white;
+  display: flex;
+  padding-left: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ThirdMng {
+  flex: 1 1 300px;
+  max-width: 100%;
+}
+
+.ThirdImg {
+  width: 90%;
+}
+
+.myp {
+  color: white;
+  padding: 10px 0 10px 40px;
+}
+
+/* ------------------------
+   Media Queries (Responsive)
+------------------------ */
+
+@media (max-width: 1024px) {
+  .main h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .main p {
+    font-size: 1.2rem;
+  }
+
+  .ThirdSection {
+    padding-left: 20px;
+    justify-content: center;
+  }
+
+  .myp {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-align: center;
+  }
+
+  .main p {
+    text-align: center;
+  }
+
+  .womanWackingSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ThirdSection {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .myp {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .ThirdMng {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .main p {
+    font-size: 1rem;
+  }
+
+  .womanWacking {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .ThirdImg {
+    width: 100%;
+  }
+}
